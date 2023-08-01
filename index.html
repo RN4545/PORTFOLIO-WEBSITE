@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roshan - PortFolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: "Poppins", sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 65px;
+      background-color: rgb(18, 12, 62);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+
+    }
+
+    nav ul li {
+      padding: 0 10px 10px;
+      list-style: none;
+      margin: 80px 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(153, 153, 226);
+      font-size: 1.02rem;
+    }
+
+    .left {
+      font-size: 1.3rem;
+    }
+
+    .firstsection>div {
+      width: 30%;
+    }
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .leftsection {
+      font-size: 2rem;
+    }
+    .leftsection .buttons{
+      padding: 45px 0;
+    }
+
+    .leftsection .btn{
+      padding: 9.5px;
+      background: #1e2167;
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .rightsection img {
+      width: 80%;
+      margin: 50px 0;
+
+    }
+
+    .purple {
+      color: blueviolet;
+    }
+
+    #element {
+      color: rgb(153, 153, 226);
+    }
+    .secondsection{
+      max-width: 80vw;
+      margin: auto;
+      height: 80vh;
+    }
+    .secondsection h1{
+      font-size: 1.5rem;
+    }
+    .secondsection .box{
+     
+      display: flex;
+      background: white;
+      width: 60vw;
+      height: 2px;
+      margin: 56px 0;
+    }
+    .secondsection .vertical{
+      /* display: flex; */
+      margin: 0 190px;
+      height: 93px;
+      width: 1px;
+      background-color: white;
+    }
+    main hr{
+      border: 0;
+      background: #9c97f1;
+      height: 1.2px;
+      margin: 10px 64px;
+      margin-bottom: 40px;
+    }
+    .text-gray{
+      color: gray;
+    }
+    .img-top{
+      width: 35px;
+      position: relative;
+      top: -32px;
+      left: -9px;
+    }
+    .vertical-title{
+      font-size: 14px;
+      position: relative;
+      top: 75px;
+      width:270px;
+    }
+    .vertical-desc{
+      position: relative;
+      top: 86px;
+      color: gray;
+      width: 150px;
+      font-size: 9.5px; 
+    }
+    
+    .footer{
+      background-color: #0e0e1a;
+      /* height: 233px; */
+      display: flex;
+      padding: 23px 122px;
+      justify-content: space-evenly;
+    }
+    .footer ul{
+      list-style: none;
+    }
+    .footer > div{
+      width: 220px;
+    }
+    .footer-Rights{
+      color: gray;
+    }
+    @media  screen and (max-width: 986px) {
+      .box{
+        flex-direction: column;
+      }
+      .secondsection.vertical{
+        display: flex;
+        flex-direction: column-reverse;
+        /* height: unset; */
+      }
+      .vertical-title, .vertical-desc{
+        left: 45px;
+      }
+      .footer{
+        display: none;
+      }
+      .firstsection{
+        flex-direction: column-reverse;
+      }
+      
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Roshan's Portfolio</div>
+      <div class="Right">
+        <ul>
+          <li> <a href="index.html"> Home</a></li>
+          <li> <a href="About.html"> About</a></li>
+          <li> <a href="Services.html"> Services</a></li>
+          <li> <a href="Projects.html"> Projects</a></li>
+          <li> <a href="Contact.html"> Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi, My name is <span class="purple">Roshan</span>
+        <div>and I am a passionate</div>
+        <!-- <div>Web Developer</div> -->
+        <span id="element"></span>
+        <div class="buttons">
+          <a href="https://drive.google.com/file/d/1HSCpVqhjrhVm3qFvs3UkkpBbO52H8yl5/view?usp=sharing">
+          <button class="btn">Download Resume</button>
+        </a>
+        <a href="https://github.com/RN4545">
+          <button class="btn">Visit Github</button>
+        </a>
+        </div>
+      </div>
+      <div class="rightsection">
+        <img src="bg.png" alt="not load">
+      </div>
+    </section>
+    <hr>
+    <section class="secondsection">
+      <span class="text-gray">What i have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="img-top" src="React.png" alt="NA">
+          <div class="vertical-title">
+            React front-end Developer Intern (May 2023 - Aug 2023)
+          </div>
+          <div class="vertical-desc">
+            Completed React Frontend development internship, gaining hands on experience in building responsive
+            websites. Developed and implemented React components for a dynamic internship project, showcasing
+            proficiency in modern front-end development techniques.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="img-top" src="bg.png" alt="NA">
+          <div class="vertical-title">
+            Web Developer Intern (May 2023 - Aug 2023)
+          </div>
+          <div class="vertical-desc">
+            Design and developed dynamic and responsive websites using HTML, CSS, JavaScript. Improved website
+            performance and speed through organization techniques by 30%.
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+  <div class="footer">
+    <div class="footer-first">
+      <h3>Roshan's Developer Portfolio</h3>
+    </div>
+    <div class="footer-second">
+      <ul>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+      </ul>
+    </div>
+    <div class="footer-third">
+      <ul>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+      </ul>
+    </div>
+    <div class="footer-fourth">
+      <ul>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+      </ul>
+    </div>
+    <div class="footer-Rights">
+      www.roshansportfolio.com|All rights reserved
+    </div>
+  </div>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'React Frontend Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+
+</html>
